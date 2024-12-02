@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>cart</title>
+        <script>
+            function one()
+            {
+                var a=f.t2.value;
+                var b=f.t3.value;
+                fa1.value=a*b;
+            }
+            function two()
+            {
+                var a=f.t5.value;
+                var b=f.t6.value;
+                fa2.value=a*b;
+            }
+            function add()
+            {
+                var s1=parseInt(fa1.value);
+                var s2=parseInt(fa2.value);
+                fa3.value=s1+s2;
+            }
+        </script>
+    </head>
+    <body style="background-color: coral;"></bodystyle>
+        <form name="f">
+            <table width="100%",border="2" style="background-color: cadetblue;">
+                <tr>
+                    <th>Book name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="t1"value=""/></td>
+                    <td><input type="text" name="t2"value=""/></td>
+                    <td><input type="text" name="t3"value=""/></td>
+                    <td>Rs<input type="text" name="a1" onfocus="one()"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="t4"value=""/></td>
+                    <td><input type="text" name="t5"value=""/></td>
+                    <td><input type="text" name="t6"value=""/></td>
+                    <td>Rs<input type="text" name="a2" onfocus="two()"/></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right"><b>Total Amount</b></td>
+                    <td>Rs<input type="text" name="a3" value="" onfocus="add()"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
